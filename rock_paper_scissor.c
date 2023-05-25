@@ -12,7 +12,7 @@ void play(char *playerName, int *result, int *points)
     while (loop > 0)
     {
     repeat:
-        printf("\n\nChoose one option\n  0 - Rock\n  1 - Paper\n  2 - Sessior\n");
+        printf("\n\nChoose one option\n  0 - Rock\n  1 - Paper\n  2 - Scissor\n");
         scanf("%d", &n);
         switch (n)
         {
@@ -25,7 +25,7 @@ void play(char *playerName, int *result, int *points)
             break;
 
         case 2:
-            printf("%s : Sessior\n", playerName);
+            printf("%s : Scissor\n", playerName);
             break;
 
         default:
@@ -45,7 +45,7 @@ void play(char *playerName, int *result, int *points)
             break;
 
         case 2:
-            printf("Computer : Sessior\n");
+            printf("Computer : Scissor\n");
             break;
         }
         // user win case
@@ -96,7 +96,7 @@ int main()
 {
     char *palyerName, ch;
     int n = 100, result, points;
-    printf("\t\t\tWelcome to Rock-Paper_sessior Game\n");
+    printf("\t\t\tWelcome to Rock-Paper_Scissor Game\n");
     printf("Enter Name : ");
     palyerName = (char *)malloc(n * sizeof(char));
     gets(palyerName);
